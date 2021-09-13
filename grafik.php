@@ -194,31 +194,28 @@ if (isset($_GET['miesiac'])) {
   }
 
         }
-// PHP program to convert number to month name
+
   
 
 $monthNum = date('m');
 $daynum = date('t');
   
-// Create date object to store the DateTime format
 $dateObj = DateTime::createFromFormat('!m', $monthNum);
 
 $dateObjm = DateTime::createFromFormat('!t', $daynum);
 
 
-// Store the month name to variable
+
 $monthName = $dateObj->format('F');
 $daycount = $dateObjm;
-// Display output
 
 
-  
 $m_en = array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
 
 $m_pol = array("Styczen", "Luty", "Marzec", "Kwiecien", "Maj", "Czerwiec", "Lipiec", "Sierpien", "Wrzesien", "Pazdziernik", "Listopad", "Grudzien");
 $workoutSlug = str_replace($m_en, $m_pol, $monthName);
 if (isset($_GET['miesiac'])) {
-  //echo $_POST['miesiac'];
+ 
 }
 
 function strpos_recursive($haystack, $needle, $offset = 0, &$results = array()) {               
@@ -242,8 +239,6 @@ function getID4($name)
 for ($x = 1; $x <= date('t'); $x++) {
  
   while($rows = mysqli_fetch_array($result)) {
-    // echo '<td class="'. $rows[0] . '.' . $x . '">' . $rows[0] . '.' . $x . '</td>';
-
   
   }
     echo "<tr>";
@@ -280,54 +275,14 @@ $contents = $zawartosc;
 
 $czy = strpos($contents,  $rows[0] . '_' . $x);
 
-if ($czy == FALSE)
-{
-
-} // nie znaleziono słowa cholera  
-else 
-{
-// echo '<td class="'. $rows[0] . '.' . $x . '">' . $rows[0] . '.' . $x . '</td>';
-}
-
-// $lines = file($file);
-// foreach($lines as $line_num => $line)
-// {
-
-
-
-
-
-
-
-  
   $searchfor = $rows[0] . '_' . $x;
   
-  // the following line prevents the browser from parsing this as HTML.
-
-  
-  // get the file contents, assuming the file to be readable (and exist)
   $contents = file_get_contents($file);
-  // escape special characters in the query
+  
   $pattern = preg_quote($searchfor, '/');
-  // finalise the regular expression, matching the whole line
+  
   $pattern = "/^.*$pattern.*\$/m";
-  // search, and store all matching occurences in $matches
-
-//  $pattern = preg_quote($line, '/');
-// // "/^.*$pattern.*\$/m";
-//  $pattern = "/^.*$pattern.*\$/m";
-
-//  if(preg_match_all($pattern, $contents, $matches)){
-
-   
-
-  //   $matches = array("");
-  //   if(strpos($contents, $rows[0] . '_' . $x . ":")!==false){
-  //   //jest
-  //   $variable = implode("\n", $matches[0]);
-   
-
-  // echo $variable . " - " .  $rows[0] . '_' . $x . ":" . "</br>";
+ 
  
   $string = $contents;
   $search = $rows[0] . '_' . $x . ":";
@@ -335,8 +290,7 @@ else
   
   if($found) {
       foreach($found as $pos) {
-          // echo 'Found "'.$search.'" in string "'.$string.'" at position <b>'.$pos.'</b> : ' . substr($string, $pos, (strlen($search) -1 )) .  '<br />';
-          // echo (strlen($search) -2 );
+         
           if (substr($string, $pos, (strlen($search) -1 )) == $rows[0] . '_' . $x)
           {
               $magic = substr($string, $pos, (strlen($search) +2 ));
@@ -344,25 +298,6 @@ else
           echo '<td class="'. $rows[0] . '_' . $x . '">' . (substr($magic, $position +1)) . '</td>';
       }   
     }
-
-
-
-//  $email = "prezydent@polska.pl";
-// $domena = strstr($variable, ":");
-// // echo $domena;
-
-
-      // echo $position . "<br>";
-    //  echo '<td class="'. $rows[0] . '_' . $x . '">' .  $domena . '</td>';
-
-    //  $position =strpos($variable , ':');
-
-  //  echo '<td class="'. $rows[0] . '_' . $x . '">' . substr($variable, $position + 1) . '</td>';
-//  }
-
-// }
-
-
 
 }
 
@@ -413,6 +348,3 @@ fclose($plik);
     
 </html>
 
-<!------ Include the above in your HEAD tag ---------->
-
- 
