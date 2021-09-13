@@ -58,9 +58,6 @@ window.location.href = "grafik.php?miesiac=" + value + "&submit=Zatwierdź";
           <li class="nav-item">
             <a class="nav-link" href="admin/dashboard.php" title="Cart"><i class="fas fa-user-tie"></i>Kierownik <i class="fas fa-user-tie shortmenu"></i></a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#" title="Comment"><i class="fas fa-user-friends"></i> Comment <i class="fas fa-user-friends shortmenu animate"></i></a>
-          </li> -->
         </ul>
         <ul class="navbar-nav ml-md-auto d-md-flex">
           <li class="nav-item">
@@ -91,10 +88,10 @@ window.location.href = "grafik.php?miesiac=" + value + "&submit=Zatwierdź";
 <?php
 $monthNum = date('m');
 
-// Create date object to store the DateTime format
+
 $dateObj = DateTime::createFromFormat('!m', $monthNum);
 
-// Store the month name to variable
+
 $monthName = $dateObj->format('F');
 
 // Display output
