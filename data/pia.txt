@@ -1,0 +1,13 @@
+<?php $bazap =  array (
+  0 => 'Kajzerka',
+  1 => 'Pszenna',
+  2 => 'Serowa',
+  3 => 'Bagietka hiszpańska',
+  4 => 'Bagietka czosnkowa',
+  5 => 'Grahamka',
+  6 => 'Żytnia',
+  7 => 'Bułka z dynią',
+  8 => 'Fitness',
+  9 => 'Venezia',
+  10 => 'Bułka Ultra',
+);

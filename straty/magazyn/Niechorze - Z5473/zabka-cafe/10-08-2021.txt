@@ -1,0 +1,29 @@
+
+Dodane przez : Natalia o godzinie 22:14:13
+
+
+Bułka_HotDog: 0
+
+Bułka_HotDog_(XXL): 0
+
+Parówka_z_szynki: 18
+
+Parówka_z_szynki(XXL): 4
+
+Kabanos: 4
+
+Bekon-Ser: 0
+
+Chorizo_(XXL): 0
+
+Kebdog: 0
+
+Parówka_roślinna: 1
+
+Grillowa_(XXL): 2
+
+Parówka_serowa: 2
+
+Kaszanka: 1
+
+---------------------------------------------------------------------------

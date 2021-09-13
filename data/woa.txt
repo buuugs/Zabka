@@ -1,0 +1,13 @@
+<?php $bazawo =  array (
+  0 => 'Pomidor malinowy',
+  1 => 'Pomidor',
+  2 => 'Ziemniaki',
+  3 => 'Banany',
+  4 => 'Jabłka',
+  5 => 'Cytryny',
+  6 => 'Pomarańcze',
+  7 => 'Nektarynki',
+  8 => 'Śliwki',
+  9 => 'Arbuzy',
+  10 => 'Brzoskwinie',
+);

@@ -1,0 +1,9 @@
+
+Nicolas_1:W
+Paulina_1:1
+Konrad_1:1
+Ala_1:2
+Nicolas_2:2
+Paulina_2:W
+Konrad_2:2
+Ala_2:1

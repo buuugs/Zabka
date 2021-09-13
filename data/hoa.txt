@@ -1,0 +1,13 @@
+<?php $bazah =  array (
+  0 => 'Bułka HotDog',
+  1 => 'Bułka HotDog (XXL)',
+  2 => 'Parówka z szynki',
+  3 => 'Parówka z szynki(XXL)',
+  4 => 'Kabanos',
+  5 => 'Bekon-Ser',
+  6 => 'Chorizo (XXL)',
+  7 => 'Kebdog',
+  8 => 'Parówka roślinna',
+  9 => 'Grillowa (XXL)',
+  10 => 'Parówka serowa',
+);
