@@ -37,8 +37,6 @@ if (isset($_POST['password'])) {
     $user = $_SESSION['username'];
 
     $password = stripslashes($_REQUEST['password']);
-    $password = mysqli_real_escape_string($con, $password);
-    // Check user is exist in the database
     $query = "UPDATE users set password='" . md5($password) . "' WHERE username='" . $user . "'";
     $result = mysqli_query($con, $query) or die(mysqli_error());
     echo $result;
@@ -65,9 +63,7 @@ if (isset($_POST['password'])) {
           <li class="nav-item">
             <a class="nav-link" href="admin/dashboard.php" title="Cart"><i class="fas fa-user-tie"></i>Kierownik <i class="fas fa-user-tie shortmenu"></i></a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#" title="Comment"><i class="fas fa-user-friends"></i> Comment <i class="fas fa-user-friends shortmenu animate"></i></a>
-          </li> -->
+    
         </ul>
         <ul class="navbar-nav ml-md-auto d-md-flex">
           <li class="nav-item">
@@ -121,6 +117,6 @@ if (isset($_POST['password'])) {
     
 </html>
 
-<!------ Include the above in your HEAD tag ---------->
+
 
  

@@ -337,7 +337,3 @@ for (i = 0; i < coll.length; i++) {
     </body>
     
 </html>
-
-<!------ Include the above in your HEAD tag ---------->
-
- 

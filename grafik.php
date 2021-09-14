@@ -50,13 +50,13 @@ window.location.href = "grafik.php?miesiac=" + value + "&submit=Zatwierdź";
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav animate side-nav">
           <li class="nav-item dropdown">
-        <a class="nav-link" href="dashboard.php" title="Admin">
+        <a class="nav-link" href="dashboard.php" title="DashBoard">
           <i class="fas fa-user"></i>Pracownik <i class="fas fa-user shortmenu animate"></i>
         </a>
 
       </li>
           <li class="nav-item">
-            <a class="nav-link" href="admin/dashboard.php" title="Cart"><i class="fas fa-user-tie"></i>Kierownik <i class="fas fa-user-tie shortmenu"></i></a>
+            <a class="nav-link" href="admin/dashboard.php" title="Admin"><i class="fas fa-user-tie"></i>Kierownik <i class="fas fa-user-tie shortmenu"></i></a>
           </li>
         </ul>
         <ul class="navbar-nav ml-md-auto d-md-flex">

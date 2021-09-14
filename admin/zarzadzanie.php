@@ -6,7 +6,7 @@ $iskierownik = 0;
 $result = mysqli_query($con,'SELECT username FROM `users` WHERE kierownik="1"');
 
 while($rows = mysqli_fetch_array($result)) {
-//echo $rows[0];
+
 if ($_SESSION['username'] == $rows[0])
 {
   $iskierownik = 1;
@@ -17,7 +17,7 @@ if ($_SESSION['username'] == $rows[0])
 }
 if ($iskierownik)
 {
-  //echo "<script type='text/javascript'>alert('Kierownik');</script>";
+
 }
 else
 {
@@ -25,10 +25,7 @@ else
 }
 ?>
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -314,7 +311,5 @@ for (i = 0; i < coll.length; i++) {
     </body>
     
 </html>
-
-<!------ Include the above in your HEAD tag ---------->
 
  

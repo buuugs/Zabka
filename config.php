@@ -1,6 +1,5 @@
 <?php
-    // Enter your host name, database username, password, and database name.
-    // If you have not set database password on localhost then set empty.
+  
     
    $con = mysqli_connect("localhost","root","","zabka");
     if (mysqli_connect_errno()){
@@ -12,6 +11,6 @@
     include 'data/pia.txt';
     $hoa = array();
    include 'data/hoa.txt';
-    // Check connection
+    
 
 ?>
